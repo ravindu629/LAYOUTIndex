@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="/clothes">
         LAYOUTIndex
       </a>
       <button
