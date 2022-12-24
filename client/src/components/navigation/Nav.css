@@ -3,11 +3,16 @@
 .navbar {
   padding: 0 1rem 1rem;
   background-color: #0b0c10;
+  margin-top: 15px;
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-nav {
+  text-align: left;
 }
 
 .nav-item {
@@ -15,9 +20,12 @@
 }
 
 .nav-link {
-  font-size: 1.2rem;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+}
+
+.clothes {
+  margin-left: 300px;
 }
 
 /* footer */

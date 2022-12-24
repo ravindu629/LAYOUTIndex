@@ -3,6 +3,8 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Header from "./components/navigation/Header";
 import Footer from "./components/navigation/Footer";
+import AddProduct from "./components/products/AddProduct";
+import UpdateProduct from "./components/products/UpdateProduct";
 
 import "./App.css";
 
@@ -14,9 +16,12 @@ function App() {
         <Routes>
           {/* <Route path="/home" exact element={<Contacts />} />
 
-          <Route path="/addEvent" exact element={<AddNewEvent />} />
+          
           <Route path="/addUser" exact element={<RegisterUser />} />
           <Route path="/" exact element={<UserLogin />} /> */}
+
+          <Route path="/addProduct" exact element={<AddProduct />} />
+          <Route path="/updateProduct/:id" element={<UpdateProduct />} />
         </Routes>
 
         <Footer />

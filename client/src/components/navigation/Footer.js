@@ -1,5 +1,5 @@
 import React from "react";
-import "./nav.css";
+import "./Nav.css";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -12,6 +12,7 @@ function Footer() {
         <i className="fab footer-icons fa-facebook-f"></i>
         <i className="fab footer-icons fa-instagram"></i>
         <i className="fas footer-icons fa-envelope"></i>
+
         <p className="copyright">© Copyright {year}</p>
       </div>
     </footer>

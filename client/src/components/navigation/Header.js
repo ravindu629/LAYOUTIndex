@@ -1,5 +1,5 @@
 import React from "react";
-import "./nav.css";
+import "./Nav.css";
 
 function Header() {
   return (
@@ -20,7 +20,7 @@ function Header() {
       </button>
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
+          <li className="nav-item clothes">
             <a className="nav-link" href="/studentLogin">
               CLOTHES
             </a>
@@ -38,7 +38,7 @@ function Header() {
 
           <li className="nav-item">
             <a className="nav-link" href="/staffLogin">
-              Login
+              MANAGE PRODUCTS
             </a>
           </li>
         </ul>
