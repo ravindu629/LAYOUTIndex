@@ -1,0 +1,30 @@
+.formContentUser {
+  margin: 8% 20%;
+}
+
+.formBackgroundUser {
+  background-color: white;
+  border-radius: 1%;
+  padding: 3%;
+}
+
+.formHeaderUser {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 600;
+  color: red;
+}
+
+.form-controlUser {
+  border-radius: 25px;
+  text-align: center;
+}
+
+.formElementUser {
+  padding: 2%;
+  font-weight: 600;
+}
+
+.formBtnUser {
+  margin-left: 3%;
+}

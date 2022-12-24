@@ -5,6 +5,9 @@ import Header from "./components/navigation/Header";
 import Footer from "./components/navigation/Footer";
 import AddProduct from "./components/products/AddProduct";
 import UpdateProduct from "./components/products/UpdateProduct";
+import AllProducts from "./components/products/AllProducts";
+import UserLogin from "./components/users/UserLogin";
+import RegisterUser from "./components/users/RegisterUser";
 
 import "./App.css";
 
@@ -21,7 +24,11 @@ function App() {
           <Route path="/" exact element={<UserLogin />} /> */}
 
           <Route path="/addProduct" exact element={<AddProduct />} />
+          <Route path="/allProducts" exact element={<AllProducts />} />
           <Route path="/updateProduct/:id" element={<UpdateProduct />} />
+
+          <Route path="/login" exact element={<UserLogin />} />
+          <Route path="/addUser" exact element={<RegisterUser />} />
         </Routes>
 
         <Footer />

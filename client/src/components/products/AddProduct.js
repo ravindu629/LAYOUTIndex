@@ -23,7 +23,7 @@ export default function AddProduct() {
       .post("http://localhost:5000/api/products", product)
       .then(() => {
         alert("Product added");
-        navigate("/");
+        navigate("/allProducts");
       })
       .catch((err) => {
         alert(err);

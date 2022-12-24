@@ -39,12 +39,7 @@
   background-color: #0b0c10;
 }
 
-.footer-icons {
-  padding: 10px;
-  color: #66fcf1;
-}
-
 .copyright {
   font-size: 0.75rem;
-  color: #f4fafa;
+  color: orange;
 }

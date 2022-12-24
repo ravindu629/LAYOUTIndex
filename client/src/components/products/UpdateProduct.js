@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Products.css";
@@ -41,7 +42,7 @@ export default function UpdateProduct() {
       .put(`http://localhost:5000/api/products/${id}`, updatedProduct)
       .then(() => {
         alert("Product details updated");
-        navigate("/");
+        navigate("/allProducts");
       })
       .catch((err) => {
         alert(err);

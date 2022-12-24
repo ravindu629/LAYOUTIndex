@@ -28,3 +28,18 @@
 .formBtn {
   margin-left: 3%;
 }
+
+.tableButtons {
+  margin: 30px 30px 15px;
+}
+
+.table_heading {
+  text-align: center;
+  color: orange;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.tableContent {
+  margin: 0% 10% 15%;
+}

@@ -21,23 +21,23 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item clothes">
-            <a className="nav-link" href="/studentLogin">
+            <a className="nav-link" href="/clothes">
               CLOTHES
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/notices">
+            <a className="nav-link" href="/footwear">
               FOOTWEAR
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/studentLogin">
+            <a className="nav-link" href="/accessories">
               ACCESSORIES
             </a>
           </li>
 
           <li className="nav-item">
-            <a className="nav-link" href="/staffLogin">
+            <a className="nav-link" href="/login">
               MANAGE PRODUCTS
             </a>
           </li>
