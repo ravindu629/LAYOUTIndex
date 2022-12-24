@@ -20,8 +20,9 @@ app.get("/", (req, res) => {
   res.send("Api running");
 });
 
-//import routes for Products
+//import routes for Products and Users
 app.use("/api/products", require("./routes/Product.route"));
+app.use("/api/users", require("./routes/User.route"));
 
 app.listen(port, () => {
   console.log("Server is starting on port " + port);
