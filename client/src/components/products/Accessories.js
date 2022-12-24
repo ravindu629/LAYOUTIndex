@@ -6,42 +6,42 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
-function Footwear() {
-  const [footwear, setFootwear] = useState([]);
+function Accessories() {
+  const [accessories, setAccessories] = useState([]);
 
   let navigate = useNavigate();
 
   useEffect(() => {
-    function getFootwear() {
+    function getAccessories() {
       axios
         .get("http://localhost:5000/api/products")
         .then((res) => {
           const allProducts = res.data;
 
-          const foot = allProducts.filter((product) => {
-            return product.category === "Footwear";
+          const accessories_ = allProducts.filter((product) => {
+            return product.category === "Accessories";
           });
 
-          setFootwear(foot);
+          setAccessories(accessories_);
         })
         .catch((err) => {
           alert(err.message);
         });
     }
-    getFootwear();
+    getAccessories();
   }, []);
 
   //search function
 
   function filterData(products, searchKey) {
-    const result = footwear.filter((product) => {
+    const result = products.filter((product) => {
       return (
         product.type.toLowerCase().includes(searchKey) &&
-        product.category == "Footwear"
+        product.category == "Accessories"
       );
     });
 
-    setFootwear(result);
+    setAccessories(result);
   }
 
   function handleSearchArea(e) {
@@ -74,19 +74,19 @@ function Footwear() {
             onChange={handleSearchArea}
           />
         </div>
-        <h4 className="productTitle">Footwear</h4>
+        <h4 className="productTitle">Accessories</h4>
         <div>
-          {footwear.map((foot, index) => {
+          {accessories.map((acc, index) => {
             return (
-              <div className="note" key={foot._id}>
+              <div className="note" key={acc._id}>
                 <div>
-                  <img className="eventImg" src={foot.imageUrl} />
+                  <img className="eventImg" src={acc.imageUrl} />
                   <div className="productDesc">
-                    <h1>{foot.name}</h1>
-                    <h1>{foot.brand}</h1>
-                    <h1>Rs.{foot.price}.00</h1>
-                    <h1>{foot.quantity}</h1>
-                    <h1>{foot.type}</h1>
+                    <h1>{acc.name}</h1>
+                    <h1>{acc.brand}</h1>
+                    <h1>Rs.{acc.price}.00</h1>
+                    <h1>{acc.quantity}</h1>
+                    <h1>{acc.type}</h1>
                     <br />
                   </div>
                   <div className="productBoxBtn">
@@ -95,7 +95,7 @@ function Footwear() {
                       style={viewBtnStyle}
                       startIcon={<VisibilityIcon />}
                       onClick={() => {
-                        navigate(`/viewProduct/${foot._id}`);
+                        navigate(`/viewProduct/${acc._id}`);
                       }}
                     >
                       View Product
@@ -111,4 +111,4 @@ function Footwear() {
   );
 }
 
-export default Footwear;
+export default Accessories;

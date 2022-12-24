@@ -1,7 +1,17 @@
 import React from "react";
 import "./Nav.css";
+import Button from "@mui/material/Button";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 function Header() {
+  const cartIconStyle = {
+    borderRadius: 35,
+    borderColor: "white",
+    color: "white",
+    fontWeight: "bold",
+    fontSize: "110%",
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
       <a className="navbar-brand" href="/">
@@ -26,7 +36,7 @@ function Header() {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/footwear">
+            <a className="nav-link" href="/footwears">
               FOOTWEAR
             </a>
           </li>
@@ -40,6 +50,17 @@ function Header() {
             <a className="nav-link" href="/login">
               MANAGE PRODUCTS
             </a>
+          </li>
+
+          <li className="nav-item">
+            <Button
+              variant="outlined"
+              style={cartIconStyle}
+              size="large"
+              endIcon={<ShoppingCartIcon />}
+            >
+              0 &nbsp;{" "}
+            </Button>
           </li>
         </ul>
       </div>

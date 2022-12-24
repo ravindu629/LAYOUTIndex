@@ -1,0 +1,39 @@
+.note {
+  border-radius: 7px;
+  margin: 40px 30px;
+  float: left;
+  border: 2px solid orange;
+  width: 40%;
+  font-style: italic;
+  padding: 10px;
+}
+.note h1 {
+  font-size: larger;
+  margin-bottom: 6px;
+  font-weight: 400;
+  color: yellow;
+  margin: 7px;
+}
+
+.productTitle {
+  color: orange;
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.eventImg {
+  width: 250px;
+  height: 170px;
+  float: right;
+}
+
+.searchSection {
+  margin: 20px 300px;
+}
+
+.searchBar {
+  background-color: rgb(241, 218, 222);
+  font-weight: bold;
+  font-size: larger;
+}

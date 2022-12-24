@@ -8,6 +8,10 @@ import UpdateProduct from "./components/products/UpdateProduct";
 import AllProducts from "./components/products/AllProducts";
 import UserLogin from "./components/users/UserLogin";
 import RegisterUser from "./components/users/RegisterUser";
+import Clothes from "./components/products/Clothes";
+import Accessories from "./components/products/Accessories";
+import Footwear from "./components/products/Footwear";
+import ViewProduct from "./components/products/ViewProduct";
 
 import "./App.css";
 
@@ -29,6 +33,11 @@ function App() {
 
           <Route path="/login" exact element={<UserLogin />} />
           <Route path="/addUser" exact element={<RegisterUser />} />
+
+          <Route path="/clothes" exact element={<Clothes />} />
+          <Route path="/accessories" exact element={<Accessories />} />
+          <Route path="/footwears" exact element={<Footwear />} />
+          <Route path="/viewProduct/:id" exact element={<ViewProduct />} />
         </Routes>
 
         <Footer />

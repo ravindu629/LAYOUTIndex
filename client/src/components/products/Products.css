@@ -43,3 +43,20 @@
 .tableContent {
   margin: 0% 10% 15%;
 }
+
+.prodImg {
+  width: 500px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: left;
+}
+
+.product_Content {
+  margin: 50px 0px 70px 550px;
+  font-style: italic;
+  color: orange;
+  background-color: black;
+  padding: 30px;
+}
