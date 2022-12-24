@@ -4,7 +4,8 @@ const Product = require("../models/Product.model");
 
 //Add a new product
 const addProduct = (req, res) => {
-  const { name, category, brand, price, quantity, description } = req.body;
+  const { name, category, brand, price, quantity, description, type } =
+    req.body;
 
   const product = new Product({
     name,
@@ -13,6 +14,7 @@ const addProduct = (req, res) => {
     price,
     quantity,
     description,
+    type,
   });
 
   product
@@ -58,7 +60,8 @@ const updateProduct = async (req, res) => {
       return res.status(404).json("There is no product to update");
     }
 
-    const { name, category, brand, price, quantity, description } = req.body;
+    const { name, category, brand, price, quantity, description, type } =
+      req.body;
 
     const updatedProduct = await Product.findByIdAndUpdate(productId, {
       name,
@@ -67,6 +70,7 @@ const updateProduct = async (req, res) => {
       price,
       quantity,
       description,
+      type,
     });
 
     res.status(200).json(updatedProduct);
