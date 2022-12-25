@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
-      <a className="navbar-brand" href="/clothes">
+      <a className="navbar-brand" href="/">
         LAYOUTIndex
       </a>
       <button
@@ -31,7 +31,7 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item clothes">
-            <a className="nav-link" href="/clothes">
+            <a className="nav-link" href="/">
               CLOTHES
             </a>
           </li>

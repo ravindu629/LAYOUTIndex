@@ -42,7 +42,7 @@ export default function UserLogin() {
     <div className="container">
       <div className="formContentUser">
         <div className="formBackgroundUser">
-          <div className="formHeaderUser">User Login</div>
+          <div className="formHeaderUser">Product Manager Login</div>
           <form onSubmit={sendData}>
             <div className="form-group row formElementUser">
               <label for="" className="col-sm-2 col-form-label">
